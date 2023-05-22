@@ -22,11 +22,7 @@ const Countries = () => {
     variables: { continentId: continent_code },
   });
 
-  console.log("continent_code", continent_code);
-
-  console.log("data", data);
-
-  if (loading) return <p>Chargement...</p>;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>{error.message}</p>;
 
   return (

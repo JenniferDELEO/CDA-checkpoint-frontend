@@ -18,9 +18,7 @@ const Continents = () => {
   const navigate = useNavigate();
   const { loading, error, data } = useQuery(GET_CONTINENTS);
 
-  console.log("data", data);
-
-  if (loading) return <p>Chargement...</p>;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>{error.message}</p>;
   return (
     <div className="flex flex-col items-center justify-center h-[100vh] w-[60%] mx-auto">
