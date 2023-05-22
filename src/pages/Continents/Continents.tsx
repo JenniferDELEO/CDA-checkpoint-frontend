@@ -24,7 +24,7 @@ const Continents = () => {
   if (error) return <p>{error.message}</p>;
   return (
     <div className="flex flex-col items-center justify-center h-[100vh] w-[60%] mx-auto">
-      <Card title="Continents" style={headerStyle}>
+      <Card title="List of continents" style={headerStyle}>
         {data.continents ? (
           data.continents.map((continent: any) => (
             <Card.Grid
